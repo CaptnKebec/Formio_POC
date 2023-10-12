@@ -25,7 +25,7 @@ export module DataService {
             const data = {
                data: {
                     "email": "bob@aa.com",
-                    "password": "Hemaqc01"
+                    "password": ""
                 }
             }
 
@@ -46,7 +46,7 @@ export module DataService {
             const data = {
                data: {
                     "email": "projectadmin@aa.com",
-                    "password": "Hemaqc01"
+                    "password": ""
                 }
             }
             const adminConfig = {

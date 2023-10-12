@@ -6,8 +6,8 @@ async function main() {
     
     const data = {
         data: {
-            email: "bob@aa.com",
-            password: "Hemaqc01"
+            email: "",
+            password: ""
         }
     };
 
@@ -25,8 +25,8 @@ async function main() {
 
      /*    const adminData = {
             data: {
-                email: "projectadmin@aa.com",
-                password: "Hemaqc01"
+                email: "",
+                password: ""
             }
         };
          const adminConfig = {
