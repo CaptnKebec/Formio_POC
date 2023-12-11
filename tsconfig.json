@@ -15,10 +15,8 @@
     "composite": true,
     "baseUrl": ".",
     "types": [
-      "webpack-env",
-      "jest",
-      "node",
-      "vite-plugin-pwa/client"
+
+      "node"
     ],
     "paths": {
       "@/*": [
@@ -50,7 +48,7 @@
     "src/**/*", 
     "src/**/*.vue"
 , "plugins"  ],
-  "extends": "@vue/tsconfig/tsconfig.web.json",
+  
   "exclude": [
     "node_modules",
     "**/*.worker.ts"

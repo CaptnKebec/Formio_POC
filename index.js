@@ -1,29 +1,28 @@
-import axios from 'axios'
-import fs from 'fs';
+import axios from "axios";
+import fs from "fs";
 
 async function main() {
-    const baseUrl = 'https://hq-dev-formio-wa.azurewebsites.net/uwjhceuwypyqlwi/'
-    
-    const data = {
-        data: {
-            email: "",
-            password: ""
-        }
-    };
+	const baseUrl = "https://devformioapi.hema-quebec.qc.ca/api-dev";
 
-    
-    try {
-        const res = await axios.post(baseUrl + 'user/login', data);
-        console.log(res.data); // Logging the received data
-      //  const token = res.headers['x-jwt-token'];
-      //  const config = {
-     //       headers: {
-     //           'x-jwt-token': token
-    //        }
-    //    };
-      //  const res2 = await axios.get(baseUrl + 'contact/submission', config);
+	const data = {
+		data: {
+			email: "admin@example.com",
+			password: "CHANGEME",
+		},
+	};
 
-     /*    const adminData = {
+	try {
+		const res = await axios.post(baseUrl + "user/login", data);
+		console.log(res.data); // Logging the received data
+		//  const token = res.headers['x-jwt-token'];
+		//  const config = {
+		//       headers: {
+		//           'x-jwt-token': token
+		//        }
+		//    };
+		//  const res2 = await axios.get(baseUrl + 'contact/submission', config);
+
+		/*    const adminData = {
             data: {
                 email: "",
                 password: ""
@@ -60,15 +59,13 @@ async function main() {
  
         fs.writeFileSync('contact_650836ea8d4468f06fe25866.pdf', res4.data);
         console.log('PDF file successfully downloaded and saved!'); */
-        // res2.data.forEach((submission: any) => {
+		// res2.data.forEach((submission: any) => {
 
-        //     console.log(submission.data);
-        // });
-
-
-    } catch (err) {
-        console.error(err); // Logging the error if any occur during the request
-    }
+		//     console.log(submission.data);
+		// });
+	} catch (err) {
+		console.error(err); // Logging the error if any occur during the request
+	}
 }
 
-main().catch(err => console.log(err))
+main().catch((err) => console.log(err));
