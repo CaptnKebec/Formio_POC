@@ -31,3 +31,7 @@
 .hq-input-form{
 	background-color: white;
 }
+
+#css-update::after{
+	content:"MAJ:29-01-2024 - 11:40";
+}
