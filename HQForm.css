@@ -14,12 +14,12 @@
 	background-color: #333366;
 }
 
-.hq-input-border > div > input{
+.hq-input-form > div > input{
 	border-radius: 5px;
 	
 }
 
-.hq-input-border > label{
+.hq-input-form > label{
 	color:#333366;
 	font-weight: bold;
 	
