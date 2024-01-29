@@ -6,7 +6,21 @@
 	color: #ed1b24;
 }
 
+.hq-new-blue{
+	color:#333366;
+}
+
+.hq-new-blue-back{
+	background-color: #333366;
+}
+
 .hq-input-border > div > input{
 	border-radius: 5px;
+	
+}
+
+.hq-input-border > label{
+	color:#333366;
+	font-weight: bold;
 	
 }
