@@ -1,6 +1,6 @@
 /*indicateur de mise à jour*/
 #css-update::after {
-	content: "MAJ:30-01-2024 - 10:40";
+	content: "MAJ:30-01-2024 - 10:49";
 }
 
 @font-face {
@@ -51,4 +51,14 @@
 	letter-spacing: 0px;
 	color: #62676a;
 	opacity: 1;
+}
+
+/*Résumé des erreurs d'un formulaire */
+.alert.alert-danger {
+	color: #ba0500;
+	background-color: inherit;
+	font: normal normal normal 16px/18px visuelt-regular-pro;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	border: 1px solid #ba0500;
+	border-radius: 8px;
 }
