@@ -15,7 +15,7 @@
 
 /*Champs texte*/
 .hq-input-form > div > input{
-	border-radius: 5px;
+	border-radius: 8px;
 	border: 1px solid #272062;
 }
 
@@ -23,6 +23,16 @@
 	color:#333366;
 	font-weight: bold;
 	
+}
+
+.form-control:focus {
+    color: #303AB2;
+    background:#FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #303AB2;
+	border-radius: 8px;
+	opacity: 1;
+    /*outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(106,180,69,.25);*/
 }
 
 
