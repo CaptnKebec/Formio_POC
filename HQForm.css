@@ -1,6 +1,6 @@
 /*indicateur de mise à jour*/
 #css-update::after {
-	content: "MAJ:30-01-2024 - 8:10";
+	content: "MAJ:30-01-2024 - 8:21";
 }
 
 /*Settings généraux pour tout les formulaires*/
@@ -34,4 +34,11 @@
 	opacity: 1;
 	outline: none;
 	box-shadow: none;
+}
+
+.form-text.text-muted {
+	font: normal normal normal 14px/24px Inter;
+	letter-spacing: 0px;
+	color: #62676a;
+	opacity: 1;
 }
