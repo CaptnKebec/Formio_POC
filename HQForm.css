@@ -1,24 +1,22 @@
-
-
-.hq-color-blue {
-	color: #00519c;
+/*indicateur de mise à jour*/
+#css-update::after{
+	content:"MAJ:30-01-2024 - 8:00";
 }
 
-.hq-color-red {
-	color: #ed1b24;
-}
+/*Settings généraux pour tout les formulaires*/
 
-.hq-new-blue{
+.hq-blue{
 	color:#333366;
 }
 
-.hq-new-blue-back{
+.hq-blue-back{
 	background-color: #333366;
 }
 
+/*Champs texte*/
 .hq-input-form > div > input{
 	border-radius: 5px;
-	
+	border: 1px solid #272062;
 }
 
 .hq-input-form > label{
@@ -28,10 +26,6 @@
 }
 
 
-.hq-input-form{
-	background-color: white;
-}
 
-#css-update::after{
-	content:"MAJ:29-01-2024 - 11:40";
-}
+
+
