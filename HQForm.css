@@ -1,6 +1,15 @@
 /*indicateur de mise à jour*/
 #css-update::after {
-	content: "MAJ:30-01-2024 - 8:21";
+	content: "MAJ:30-01-2024 - 10:18";
+}
+
+@font-face {
+	font-family: "visuelt-thin-pro";
+	src: url("fonts/visuelt-thin-pro.woff2") format("woff2"),
+		url("fonts/visuelt-thin-pro.woff") format("woff"),
+		url("fonts/visuelt-thin-pro.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
 
 /*Settings généraux pour tout les formulaires*/
