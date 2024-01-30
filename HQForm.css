@@ -4,10 +4,10 @@
 }
 
 @font-face {
-	font-family: "visuelt-thin-pro";
-	src: url("fonts/visuelt-thin-pro.woff2") format("woff2"),
-		url("fonts/visuelt-thin-pro.woff") format("woff"),
-		url("fonts/visuelt-thin-pro.ttf") format("truetype");
+	font-family: "visuelt-regular-pro";
+	src: url("fonts/visuelt-regular-pro.woff2") format("woff2"),
+		url("fonts/visuelt-regular-pro.woff") format("woff"),
+		url("fonts/visuelt-regular-pro.ttf") format("truetype");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -33,7 +33,7 @@
 .hq-input-form > label {
 	color: #333366;
 	font-weight: bold;
-	font-family: "visuelt-thin-pro";
+	font-family: "visuelt-regular-pro";
 }
 
 .form-control:focus {
