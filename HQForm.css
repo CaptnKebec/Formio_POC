@@ -1,6 +1,6 @@
 /*indicateur de mise à jour*/
 #css-update::after {
-	content: "MAJ:30-01-2024 - 10:39";
+	content: "MAJ:30-01-2024 - 10:40";
 }
 
 @font-face {
@@ -47,7 +47,7 @@
 }
 
 .form-text.text-muted {
-	font: normal normal normal 14px/24px Inter;
+	font: normal normal normal 14px/24px visuelt-regular-pro;
 	letter-spacing: 0px;
 	color: #62676a;
 	opacity: 1;
