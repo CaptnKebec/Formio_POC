@@ -1,6 +1,6 @@
 /*indicateur de mise à jour*/
 #css-update::after {
-	content: "MAJ:30-01-2024 - 8:05";
+	content: "MAJ:30-01-2024 - 8:10";
 }
 
 /*Settings généraux pour tout les formulaires*/
@@ -32,6 +32,6 @@
 	border: 2px solid #303ab2;
 	border-radius: 8px;
 	opacity: 1;
-	/*outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(106,180,69,.25);*/
+	outline: none;
+	box-shadow: none;
 }
