@@ -33,6 +33,7 @@
 .hq-input-form > label {
 	color: #333366;
 	font-weight: bold;
+	font-family: "visuelt-thin-pro";
 }
 
 .form-control:focus {
