@@ -13,7 +13,7 @@
 			rel="stylesheet"
 			href="https://cdn.form.io/formiojs/formio.full.min.css"
 		/>
-    <link rel="stylesheet" href="https://captnkebec.github.io/Formio_POC/HQForm.css" />
+    <link rel="stylesheet" href="https://hqdevformp01sa.blob.core.windows.net/css/HQForm.css" />
 		<script src="https://cdn.form.io/formiojs/formio.full.min.js"></script>
     <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -22,8 +22,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<!-- <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script> test-->
+
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -35,11 +34,30 @@
 	</body>
 
 	<script type="text/javascript">
-		window.onload = function () {
-			Formio.createForm(
-				document.getElementById("formio"),
-				"https://devformioapi.hema-quebec.qc.ca/api-dev/csssample"
-			);
-		};
+		 window.onload = function () {
+        Formio.createForm(document.getElementById("formio"), "https://devformioapi.hema-quebec.qc.ca/api-dev/csssample", {
+          language: "en",
+        }).then(function (form) {
+          var languages = { en: true };
+          window.setLanguage = function (lang) {
+            if (languages[lang]) {
+              return (form.language = lang);that 
+            }
+
+            Formio.fetch(
+              "https://devformioapi.hema-quebec.qc.ca/api-dev/language/submission?data.language=" +
+                lang
+            )
+              .then(function (resp) {
+                return resp.json();
+              })
+              .then(function (result) {
+                languages[lang] = true;
+                form.addLanguage(lang, result[0]?.data.translations);
+                form.language = lang;
+              });
+          };
+        });
+      };
 	</script>
 </html>

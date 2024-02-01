@@ -1,5 +1,6 @@
 import axios from "axios";
 import fs from "fs";
+var _loaded = {};
 
 async function main() {
 	const baseUrl = "https://devformioapi.hema-quebec.qc.ca/api-dev";
@@ -69,3 +70,13 @@ async function main() {
 }
 
 main().catch((err) => console.log(err));
+
+
+function addScript(url) {
+  if (!loaded[url]) {
+    var s = document.createElement('script');
+    s.src = url;
+    document.head.appendChild(s);
+    _loaded[url] = true;
+  }
+}

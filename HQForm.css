@@ -62,3 +62,6 @@
 	border: 1px solid #ba0500;
 	border-radius: 8px;
 }
+
+.alert.alert-danger > p::before {
+}
