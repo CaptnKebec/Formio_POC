@@ -67,9 +67,9 @@
 			).then(function (form) {
 				var languages = { fr: true };
 				window.setLanguage = function (lang) {
-					if (languages[lang]) {
-						return (form.language = lang);
-					}
+					// if (languages[lang]) {
+					// 	return (form.language = lang);
+					// }
 
 					Formio.fetch(
 						"https://devformioapi.hema-quebec.qc.ca/api-dev/langagelaitmaternel/submission?data.language=" +
